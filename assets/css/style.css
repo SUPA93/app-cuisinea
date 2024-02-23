@@ -1,0 +1,118 @@
+/* RESET CSS */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem; 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin: 10px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+ul.recipe-list {
+    list-style: none;
+    padding: 0;
+}
+
+li.recipe-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#triForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 50%;
+}
+
+#triForm label, #triForm select {
+    margin-bottom: 10px;
+}
+
+/* style container space filters */
+.grid-container {
+    display: contents;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto column 250px min */
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    justify-content: center;
+    align-items: center;
+    /* text-overflow: ellipsis;  */
+    /* flex-grow: 1; */
+}
+
+/* Bouton deconnexion */
+#logoutBtn {
+    margin: 20px;
+}
+
+/* Bouton page index (Voir nos recettes) */
+#seeRecipesBtn {
+    margin : 20px;
+}
+
+/* Bouton recipes cards */
+#recipesCardBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
