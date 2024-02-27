@@ -7,9 +7,8 @@
 -- Version du serveur : 5.7.36
 -- Version de PHP : 8.0.13
 
-CREATE DATABASE cuisinea;
 
-USE cuisinea;
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
