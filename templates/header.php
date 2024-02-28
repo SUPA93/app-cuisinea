@@ -1,15 +1,15 @@
 <?php
-require_once('lib/session.php');
-require_once('lib/config.php');
-require_once('lib/pdo.php');
-require_once('lib/recipe.php');
-require_once('lib/tools.php');
-require_once('lib/user.php');
+require_once ('./lib/session.php');
+require_once ('./lib/menu.php');
+require_once ('./lib/pdo.php'); 
+require_once ('./lib/recipe.php');
+require_once ('./lib/tools.php');
+require_once ('./lib/user.php'); 
 
 $users = getAllUsers($pdo);
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
-?>
+?> 
 <!DOCTYPE html>
 <html lang="fr" data-bs-theme="dark">
 
