@@ -17,6 +17,7 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partagez vos recettes de cuisine facilement en un instant pour le plaisir de la gourmandise! "
     <title>Cuisinea</title>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
