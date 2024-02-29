@@ -16,7 +16,6 @@ if ($recipe) {
     $ingredients = linesToArray($recipe['ingredients']);
     $instructions = linesToArray($recipe['instructions']);
 ?>
-
     <!-- Display recipe details -->
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5 m-4">
         <div class="col-10 col-sm-8 col-lg-6">
@@ -49,7 +48,7 @@ if ($recipe) {
     </div>
 
     <!-- Reviews section -->
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5 m-2">
+    <!-- <div class="row flex-lg-row-reverse align-items-center g-5 py-5 m-2">
         <h2>Commentaires</h2>
         <div class="col-lg-6">
             <form action="comment.php" method="post">
@@ -57,18 +56,16 @@ if ($recipe) {
                     <label for="comment" class="form-label">Commentaire</label>
                     <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
                 </div>
-                <input type="hidden" name="recipe_id" value="<?= $recipe['id']; ?>">
+                <input type="hidden" name="recipe_id" value="<php?= /* $recipe['id']; */ ?>">
                 <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
-        </div>
-
+        </div> -->
         <!-- Recipe errors -->
     <?php } else { ?>
         <div class="row text-center">
             <h1>Recette introuvable</h1>
         </div>
-    <?php } ?>
+    <?php } 
 
-    <?php
     require_once('templates/footer.php');
     ?>
